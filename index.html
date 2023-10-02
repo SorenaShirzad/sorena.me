@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./media/logo/white-logo.png" />
+    <title>Sorena Shirzad | سورنا شیرزاد</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./Web/css/all.min.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./tailwindcss/base.css" />
+  </head>
+  <body class="bg-[#121212]">
+    <div>
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav
+          class="flex items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
+          <div class="flex lg:flex-1">
+            <a href="#home" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img
+                class="h-8 w-auto"
+                src="./media/logo/white-logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button
+              id="show"
+              type="button"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-50 cursor-pointer"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="3"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#home" class="text-sm font-lalezar leading-6 text-gray-300"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-sm font-lalezar leading-6 text-gray-300"
+              >About</a
+            >
+            <a
+              href="#gallery"
+              class="text-sm font-lalezar leading-6 text-gray-300"
+              >Gallery</a
+            >
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a
+              href="#contact"
+              class="text-sm font-lalezar leading-6 text-gray-300 border-white border-[1px] rounded-[50px] pt-[5px] pl-[10px] pr-[10px]"
+              >Contact me <span aria-hidden="true">&rarr;</span></a
+            >
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="false" id="div">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-50"></div>
+          <div
+            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#121212] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+          >
+            <div
+              class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+              aria-hidden="true"
+            >
+              <div
+                class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff006a] to-[#00f2ff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                style="
+                  clip-path: polygon(
+                    74.1% 44.1%,
+                    100% 61.6%,
+                    97.5% 26.9%,
+                    85.5% 0.1%,
+                    80.7% 2%,
+                    72.5% 32.5%,
+                    60.2% 62.4%,
+                    52.4% 68.1%,
+                    47.5% 58.3%,
+                    45.2% 34.5%,
+                    27.5% 76.7%,
+                    0.1% 64.9%,
+                    17.9% 100%,
+                    27.6% 76.8%,
+                    76.1% 97.7%,
+                    74.1% 44.1%
+                  );
+                "
+              ></div>
+            </div>
+            <div
+              class="flex items-center justify-between outline-gray-100 p-3 rounded-[8px]"
+            >
+              <a href="#home" class="-m-1.5 p-1.5">
+                <span class="sr-only">sorena</span>
+                <img
+                  class="h-8 w-auto"
+                  src="./media/logo/white-logo.png"
+                  alt=""
+                />
+              </a>
+              <button
+                id="cls"
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-gray-50"
+              >
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="3"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="mt-6 flow-root" id="ss">
+              <h2
+                class="font-lalezar text-gray-50 text-right text-[40px] textbb"
+              >
+                سورنا شیرزاد
+              </h2>
+              <img
+                src="./media/me/nim-me-wb.jpg"
+                alt=""
+                class="w-100 rounded-[8px] martin"
+              />
+              <p class="font-yekan text-gray-300 forrtl text-justify pb-3">
+                طراح وب ، برنامه نویس و عکاس . دارنده ۲ Certificate معتبر و
+                برنده چندین جایزه عکاسی .
+              </p>
+              <span class="w-100 bg-[#313131] h-[1px] block"></span>
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a
+                    href="#home"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-lalezar leading-7 text-gray-100 hover:border-b-2 mt-5"
+                    >Home</a
+                  >
+                  <a
+                    href="#about"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-lalezar leading-7 text-gray-100 hover:border-b-2"
+                    >About</a
+                  >
+                  <a
+                    href="#gallery"
+                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-lalezar leading-7 text-gray-100 hover:border-b-2"
+                    >Gallery</a
+                  >
+                </div>
+                <div class="py-6">
+                  <a
+                    href="#contact"
+                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-lalezar leading-7 text-gray-100 hover:border-b-2"
+                    >Contact me</a
+                  >
+                  <div class="w-100 flex justify-between">
+                    <div class="floated flex justify-between">
+                      <a
+                        href="https://www.instagram.com/sorena.shirzad?utm_source=qr&r=nametag"
+                        target="_blank"
+                        class="fa-brands fa-instagram social"
+                      ></a
+                      ><a
+                        href="https://www.linkedin.com/in/sorena-shirzad-7260b720b"
+                        target="_blank"
+                        class="fa-brands fa-linkedin-in social"
+                      ></a
+                      ><a
+                        href="https://www.facebook.com/sorena.shirzad.1/"
+                        class="fa-brands fa-facebook-f social"
+                        target="_blank"
+                      ></a>
+                    </div>
+                    <span class="font-semibold copyright text-gray-200">
+                      ©sorena.shirzad</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#00fdd3] to-[#fc0054] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+                    style="
+                      clip-path: polygon(
+                        74.1% 44.1%,
+                        100% 61.6%,
+                        97.5% 26.9%,
+                        85.5% 0.1%,
+                        80.7% 2%,
+                        72.5% 32.5%,
+                        60.2% 62.4%,
+                        52.4% 68.1%,
+                        47.5% 58.3%,
+                        45.2% 34.5%,
+                        27.5% 76.7%,
+                        0.1% 64.9%,
+                        17.9% 100%,
+                        27.6% 76.8%,
+                        76.1% 97.7%,
+                        74.1% 44.1%
+                      );
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!--start slide 1 : home-->
+        <div class="swiper-slide bgimage1 bgimage" id="home">
+          <div class="trans">
+            <div class="flex flex-col container h-[400px] pt-5">
+              <h1
+                class="font-lalezar text-[40px] md:text-[60px] lg:text-[70px] text-blue-50 mb-2"
+              >
+                سورنا شیرزاد
+              </h1>
+              <p class="font-yekan text-gray-300 text-[17px] text-center rtl">
+                <span class="fa-solid fa-stars ml-[5px]"></span>
+                طراح وب / برنامه نویس / عکاس
+              </p>
+              <span class="mt-5 mb-5"
+                ><img class="hhh mx-auto" src="./media/wavy-white.svg" alt=""
+              /></span>
+              <p
+                class="font-yekan text-gray-300 text-[17px] text-center rtl p-[10px]"
+              >
+                طراح وب ، برنامه نویس و عکاس . دارنده ۲ Certificate معتبر و
+                برنده چندین جایزه عکاسی
+              </p>
+              <a
+                href="#gallery"
+                class="py-3 px-6 bg-[#121212] font-lalezar rounded-[50px] text-blue-50 w-[150px] mx-auto mt-10 honm tesst"
+              >
+                نمونه کار های من</a
+              >
+            </div>
+            <div class="www sm:hidden w-[55px]">
+              <img class="" src="./media/giphy (1).gif" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--end slide 1 : home-->
+        <!--start slide 2 : about-->
+        <div class="swiper-slide bgimage2 bgimage" id="about">
+          <div class="trans">
+            <div
+              class="flex items-center px-6 justify-center flex-col lg:flex-row fixed container overflow-y-scroll overflow-x-hidden h-[100%] pt-5"
+            >
+              <!--image of me-->
+              <div
+                class="mt-[80px] w-[100%] lg:w-[400px] xl:w-[540px] dots relative after:hidden lg:after:block before:hidden lg:before:block py-2"
+              >
+                <img
+                  src="./media/me/me-wb.jpg"
+                  class="bg-cover z-50 py-2"
+                  alt=""
+                />
+              </div>
+              <!-- end image of me-->
+              <!--start parag-->
+              <div
+                class="flex flex-col rtl items-start w-[100%] lg:w-[400px] xl:w-[540px] py-2"
+              >
+                <h2
+                  class="font-lalezar text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px] text-white"
+                >
+                  درباره من
+                </h2>
+                <span class="mt-2 mb-5"
+                  ><img
+                    class="hhh2 mx-auto"
+                    src="./media/wavy-white.svg"
+                    alt=""
+                /></span>
+                <p
+                  class="font-yekan text-gray-50 lg:pl-5 rtl text-justify text-[20px]"
+                >
+                  از بچگی عاشق یادگیری و رشد توانایی هام بودم . بسیار به برنامه
+                  نویسی ، طراحی کاربری وب ، عکاسی و هنر علاقه دارم و امیدوارم
+                  مثل گذشته ، در این راه موفق باشم .
+                </p>
+                <a
+                  href="#contact"
+                  class="text-white font-lalezar text-[20px] rounded-[50px] mebr py-2 px-4 mt-8 mb-10"
+                  >ارتباط با من</a
+                >
+              </div>
+
+              <!--end parag-->
+            </div>
+            <div class="www sm:hidden w-[55px]">
+              <img class="" src="./media/giphy (1).gif" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--end slide 2 : about-->
+        <!--start slide 3 : gallery-->
+
+        <div class="swiper-slide bgimage3 bgimage" id="gallery">
+          <div class="trans">
+            <div
+              class="flex items-center px-6 justify-start lg:justify-center flex-col lg:flex-row container overflow-scroll overflow-x-hidden h-[100%] pt-[80px] rtl overclass"
+            >
+              <div class="flex flex-col items-start">
+                <h2
+                  class="font-lalezar text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px] text-white"
+                >
+                  نمونه کار های من
+                </h2>
+                <span class="mt-2 mb-5"
+                  ><img
+                    class="hhh2 mx-auto"
+                    src="./media/wavy-white.svg"
+                    alt=""
+                /></span>
+                <p
+                  class="font-yekan text-gray-50 lg:pl-5 rtl text-justify text-[20px]"
+                >
+                  در اینجا میتوانید چند نمونه از عکاسی های من رو ببینید .
+                </p>
+                <div class="flex flex-row mt-8 w-[100%] lg-[540px]">
+                  <strong
+                    class="brl py-2 px-3 ml-1 items-center justify-center rounded-[50px]"
+                    ><span
+                      class="fa-solid text-[16px] fa-quote-left text-white"
+                    ></span
+                  ></strong>
+
+                  <a
+                    href="#contact"
+                    class="text-white font-lalezar text-[12px] lg:text-[16px] rounded-[50px] mebr py-2 px-4"
+                  >
+                    عکس های بیشتر در شبکه های اجتماعی من
+                    <span class="fa-solid fa-arrow-left mr-2"></span
+                  ></a>
+                </div>
+              </div>
+              <!--start photos-->
+              <div class="flex flex-row h-[800px] w-[600px] lg:sticky gapTen">
+                <div
+                  class="w-300px flex flex-col gap[10px] items-center justify-center h-[100%] mr-3"
+                >
+                  <div class="h-[264px] w-[176px]">
+                    <img
+                      src="./media/pics/1.jpg"
+                      alt=""
+                      class="rounded-[16px]"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-300px flex flex-col gap[10px] items-center justify-center gapTen"
+                >
+                  <div class="h-[264px] w-[176px]">
+                    <img
+                      src="./media/pics/2.jpg"
+                      alt=""
+                      class="rounded-[16px]"
+                    />
+                  </div>
+                  <div class="h-[264px] w-[176px]">
+                    <img
+                      src="./media/pics/6.jpg"
+                      alt=""
+                      class="rounded-[16px]"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="w-300px flex flex-col gap[10px] items-center justify-center gapTen"
+                >
+                  <div class="h-[264px] w-[176px]">
+                    <img
+                      src="./media/pics/4.jpg"
+                      alt=""
+                      class="rounded-[16px]"
+                    />
+                  </div>
+                  <div class="h-[264px] w-[176px]">
+                    <img
+                      src="./media/pics/5.jpg"
+                      alt=""
+                      class="rounded-[16px]"
+                    />
+                  </div>
+                  <div class="h-[264px] w-[176px]"></div>
+                </div>
+              </div>
+              <!--end photos-->
+            </div>
+            <div class="www sm:hidden w-[55px]">
+              <img class="" src="./media/giphy (1).gif" alt="" />
+            </div>
+          </div>
+        </div>
+        <!--end slide 3 : gallery-->
+        <!--start slide 4 : contact-->
+
+        <div class="swiper-slide bgimage4 bgimage" id="contact">
+          <div class="trans">
+            <div
+              class="flex items-center justify-start lg:justify-center flex-col container overflow-y-scroll overflow-x-hidden h-[100%] pt-[80px] rtl px-10"
+            >
+              <!--start title-->
+              <div class="w-[100%] text-start mb-5">
+                <h2
+                  class="font-lalezar text-white w-[100%] text-[30px] md:text-[40px] lg:text-[50px] xl:text-[60px]"
+                >
+                  ارتباط با من<span class="mt-2 mb-5"
+                    ><img class="hhh2" src="./media/wavy-white.svg" alt=""
+                  /></span>
+                </h2>
+              </div>
+              <!--end title-->
+              <!--start coner (contact information)-->
+              <div class="coner rtl flex flex-col lg:flex-row w-[100%]">
+                <div class="flex flex-col justify-evenly flx1 h-[325px]">
+                  <div
+                    class="call flex w-[100%] h-[75px] px-2 flex-rox lg:pr-[40px]"
+                  >
+                    <div
+                      class="w-[60px] h-[60px] bg-[#121212] border-solid border-white border-[2px] rounded-[50px] flex items-center justify-center ml-5"
+                    >
+                      <span class="fa-solid fa-phone text-white"></span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-lalezar text-[20px] md:text-[25px] text-white text-right"
+                        >شماره من</span
+                      ><strong
+                        class="font-yekan text-[#c4c4c4] text-[16px] md:text-[20px]"
+                        >۰۹۱۲۳۴۵۶۷۸۹</strong
+                      >
+                    </div>
+                  </div>
+                  <div class="eM call flex w-[100%] h-[75px] px-2 lg:pr-[40px]">
+                    <div
+                      class="w-[60px] h-[60px] bg-[#121212] border-solid border-white border-[2px] rounded-[50px] flex items-center justify-center ml-5"
+                    >
+                      <span class="fa-solid fa-envelope text-white"></span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-lalezar text-[20px] md:text-[25px] text-white text-right"
+                        >ایمیل من</span
+                      ><strong
+                        class="font-yekan text-[#c4c4c4] text-[10px] md:text-[20px]"
+                        >sorena.shirzad.nobar@gmail.com</strong
+                      >
+                    </div>
+                  </div>
+                  <div class="ad call flex w-[100%] h-[75px] px-2 lg:pr-[40px]">
+                    <div
+                      class="w-[60px] h-[60px] bg-[#121212] border-solid border-white border-[2px] rounded-[50px] flex items-center justify-center ml-5"
+                    >
+                      <span class="text-white fa-solid fa-location-dot"></span>
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="font-lalezar text-[20px] md:text-[25px] text-white text-right"
+                        >آدرس من</span
+                      ><strong
+                        class="font-yekan text-[#c4c4c4] text-[16px] md:text-[20px]"
+                        >ایران / تهران</strong
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col flxg lg:px-[50px]">
+                  <div class="impo flex flex-row justify-between mb-5">
+                    <input
+                      class="w-[48%] h-[50px] rounded-[8px] font-lalezar text-[20px] px-5"
+                      id="name"
+                      placeholder="نام * "
+                      type="text"
+                      name=""
+                      maxlength="15"
+                    />
+                    <input
+                      type="email"
+                      placeholder="ایمیل * "
+                      name=""
+                      id=""
+                      class="w-[48%] h-[50px] rounded-[8px] font-lalezar text-[20px] px-5"
+                    />
+                  </div>
+                  <div class="flex flex-col">
+                    <textarea
+                      name="sms"
+                      id="sms"
+                      cols="25"
+                      rows="10"
+                      maxlength="1000"
+                      placeholder="متن پیام * "
+                      class="p-5 font-lalezar text-[20px] rounded-[8px] h-[200px] mb-3"
+                    ></textarea>
+                    <button
+                      id="message"
+                      class="mb-10 w-[80px] h-[40px] rounded-[100px] bg-[#ffffff] flex items-center justify-center cursor-pointer"
+                    >
+                      <span
+                        class="fa-solid fa-paper-plane text-[#121212]"
+                      ></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!--end coner (contact information)-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination hidden lg:inline-block"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="./swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

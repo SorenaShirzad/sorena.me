@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0;
+  border-radius: 250px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+  border-radius: 250px;
+} /* Handle */
+::-webkit-scrollbar-thumb {
+  background: #55555500;
+  border-radius: 250px;
+} /* Handle on hover */
+
+.textbb {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.martin {
+  margin-bottom: 15px;
+}
+
+.forrtl {
+  direction: rtl;
+  font-size: 14px;
+}
+
+.floated {
+  width: 150px;
+}
+
+.social {
+  font-size: 20px;
+  background-color: #515151;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px 0;
+  margin-top: 10px;
+  color: white;
+}
+
+.copyright {
+  line-height: 50px;
+}
+
+/*swiper*/
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*swiper*/
+
+.bgimage {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+/*backgrounds*/
+.bgimage1 {
+  background-image: url(../media/bg/bg1.jpg);
+}
+.bgimage2 {
+  background-image: url(../media/bg/bg2.jpg);
+}
+.bgimage3 {
+  background-image: url(../media/bg/bg3.jpg);
+}
+.bgimage4 {
+  background-image: url(../media/bg/bg4.jpg);
+}
+
+/*direction column for flex display*/
+.dcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.drow {
+  display: flex;
+  flex-direction: row;
+}
+
+/*font size for header 1*/
+.fontsfh {
+  font-size: 50px !important;
+}
+
+/*for container divs*/
+.trans {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rtl {
+  direction: rtl;
+}
+.ltr {
+  direction: ltr;
+}
+
+.hhh {
+  width: 65px !important;
+}
+
+.hhh2 {
+  width: 100px !important;
+}
+
+.honm {
+  transition: all linear 500ms;
+}
+.honm:hover {
+  outline: #555555 5px solid;
+}
+.www {
+  border-radius: 50px;
+  position: absolute;
+
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/*before and after dots for personal photo*/
+.dots::before {
+  content: url(../media/dots.svg);
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  z-index: -1;
+  overflow: visible;
+}
+.dots::after {
+  content: url(../media/dots.svg);
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  z-index: -1;
+  overflow: visible;
+}
+
+/*for link to contact in about page*/
+.mebr {
+  border: 2px solid white;
+}
+
+/*for before link to contact in gallery*/
+.brl {
+  border: 2px solid white;
+}
+
+/*flxg = flex grow 2*/
+.flxg {
+  flex-grow: 1 !important;
+
+  display: flex;
+}
+.flx1 {
+  flex-grow: 1 !important;
+  display: flex;
+}
+
+.ddd {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+/*gap in photos*/
+.gapTen {
+  gap: 20px;
+}
